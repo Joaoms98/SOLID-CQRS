@@ -1,0 +1,14 @@
+CQRS-Command Query Responsibility Segregation
+
+Command: 
+Representam uma intenção de mudança no estado de uma entidade.
+AumentarSalarioFuncionario
+Provoca uma mudança de estado
+
+
+Queries: 
+É a forma de obter dados de um banco ou origem de dados para atender as 
+necessidades da aplicação.
+
+
+Aprender sobre Estrutura DDD, camadas.
