@@ -10,5 +10,8 @@ Queries:
 É a forma de obter dados de um banco ou origem de dados para atender as 
 necessidades da aplicação.
 
+-Logo, CQRS é a regra de separação entre comandos de mudança e consultas
+de uma aplicação de modo que um não interfira na tarefa do outro.
+
 
 Aprender sobre Estrutura DDD, camadas.
