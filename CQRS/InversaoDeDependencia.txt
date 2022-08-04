@@ -1,0 +1,25 @@
+Sera reduzido a dependencias de recursos instaveis.
+
+Como o AppDBContext, Leilaodao. DBContext
+
+criando uma abstração de leilaodao com uma interface que é implementada em leilaodaocomefcore
+
+nos controladores é realizado a referência desta maneira no construtor:
+
+
+        ILeilaoDao _dao;
+
+        public LeilaoApiController(ILeilaoDao dao)
+        {
+            _dao = dao;
+        }
+
+
+colocando como parametro da construção do objeto, a interface dos métodos, retirando assim, a instancia de leilaodaocomefcore
+
+No start up, será informado: 
+
+
+ public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddTransient<ILeilaoDao, LeilaoDaoComEfCore>();
